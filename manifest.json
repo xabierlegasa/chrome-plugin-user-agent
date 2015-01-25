@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
 
-  "name": "User Agent single click switcher",
-  "description": "Single click switch between normal and custom User Agent.",
+  "name": "User Agent switcher single click",
+  "description": "Single click switching between normal and the User Agent you want.",
   "version": "1.1.1",
   "icons": {
     "16": "icon16.png",
