@@ -26,8 +26,10 @@ function setSavedCustomUserAgent() {
 
 document.addEventListener('DOMContentLoaded', function () {
 
-    document.getElementById('save').addEventListener('click',
+    document.getElementById('js-save').addEventListener('click',
         save_options);
 
     setSavedCustomUserAgent();
+
+    console.log('ssss');
 });

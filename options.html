@@ -1,16 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>User Agent single click switcher</title>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="/assets/js/bootstrap.min.js"></script>
     </head>
     <body>
 
-        Custom User-Agent:
-        <input type="text" id="customUserAgent"/>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-10">
+                    <div class="page-header">
+                        <h1>Configuration</h1>
+                    </div>
 
-        <br />
-        <div id="status"></div>
-        <button id="save">Save</button>
+                    <p class="lead">Configure the User-Agent that will be used when the plugin icon is active:</p>
+
+                    Custom User-Agent:
+                    <input type="text" id="customUserAgent"/>
+
+                    <br />
+                    <div id="status"></div>
+                    <button id="js-save">Save</button>
+
+                    <br><br><br><br><br><br>
+                    <p class="lead"><a href="https://chrome.google.com/webstore/detail/user-agent-switcher-singl/igafjdcboeahmnojhkaplghloibnjkbg/reviews?hl=es-419">If you like this extension, please click this link and leave us your opinion</a></p>
+                </div>
+            </div>
+        </div>
+
 
         <script src="options.js"></script>
     </body>
