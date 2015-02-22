@@ -9,7 +9,7 @@
     "message": "User Agent switcher"
   },
   "extDefaultTitle": {
-    "message": "User-Agent switcher"
+    "message": "User-Agent switcher one click"
   },
   "optionsSaved": {
     "message": "Options saved"
@@ -28,9 +28,8 @@
   },
   "leaveUsYourOpinion": {
     "message": "If you like this extension, please <a href=\"https://chrome.google.com/webstore/detail/user-agent-switcher-singl/igafjdcboeahmnojhkaplghloibnjkbg/reviews?hl=es-419\">leave us your opinion</a>"
+  },
+  "configureUserAgentFirst": {
+    "message": "Configure custom User-Agent first."
   }
-
-
-
-
 }

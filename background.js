@@ -83,7 +83,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 chrome.browserAction.setIcon({path: 'images/icon19_on.png'});
             }
         } else {
-            alert('Configure the User-Agent first:\n Right click on the plugin icon >> options');
+            chrome.tabs.create({url: "options.html"});
+            alert(chrome.i18n.getMessage('configureUserAgentFirst'));
         }
     });
 
