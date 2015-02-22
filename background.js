@@ -6,7 +6,7 @@ function initPlugin() {
     // disable plugin and set disabled icon
     chrome.storage.sync.set({applyPlugin: false}, function () {
     });
-    chrome.browserAction.setIcon({path: 'icon19_off.png'});
+    chrome.browserAction.setIcon({path: 'images/icon19_off.png'});
 
     // load customUserAgent from storage
     chrome.storage.sync.get('customUserAgent', function (result) {
@@ -76,11 +76,11 @@ document.addEventListener('DOMContentLoaded', function () {
             if (applyPlugin) {
                 chrome.storage.sync.set({applyPlugin: false}, function () {
                 });
-                chrome.browserAction.setIcon({path: 'icon19_off.png'});
+                chrome.browserAction.setIcon({path: 'images/icon19_off.png'});
             } else {
                 chrome.storage.sync.set({applyPlugin: true}, function () {
                 });
-                chrome.browserAction.setIcon({path: 'icon19_on.png'});
+                chrome.browserAction.setIcon({path: 'images/icon19_on.png'});
             }
         } else {
             alert('Configure the User-Agent first:\n Right click on the plugin icon >> options');

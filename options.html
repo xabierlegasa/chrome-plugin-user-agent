@@ -3,11 +3,18 @@
     <head>
         <title>User Agent single click switcher</title>
 
+        <script src="/assets/js/jquery-1.11.2.min.js"></script>
+
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-
         <!-- Latest compiled and minified JavaScript -->
         <script src="/assets/js/bootstrap.min.js"></script>
+
+        <!-- translates html tags -->
+        <script src="/assets/js/i18n.js"></script>
+
+        <!-- translates html tags -->
+        <script src="/assets/css/main.css"></script>
     </head>
     <body>
 
@@ -16,20 +23,43 @@
                 <div class="col-md-2"></div>
                 <div class="col-md-10">
                     <div class="page-header">
-                        <h1>Configuration</h1>
+                        <h1 data-i18n="configuration"></h1>
                     </div>
 
-                    <p class="lead">Configure the User-Agent that will be used when the plugin icon is active:</p>
+                    <p><span class="lead" data-i18n="configureUserAgent"></span>:</p>
 
-                    Custom User-Agent:
-                    <input type="text" id="customUserAgent"/>
-
-                    <br />
+                    <input type="text" id="customUserAgent" class="form-control" style="width: 70%" placeholder="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko)"/>
+                    <br>
+                    <button id="js-save" class="btn btn-default"><span data-i18n="save"></span></button>
                     <div id="status"></div>
-                    <button id="js-save">Save</button>
 
-                    <br><br><br><br><br><br>
-                    <p class="lead"><a href="https://chrome.google.com/webstore/detail/user-agent-switcher-singl/igafjdcboeahmnojhkaplghloibnjkbg/reviews?hl=es-419">If you like this extension, please click this link and leave us your opinion</a></p>
+                    <br><br><br><br>
+                    <p class="lead" data-i18n="leaveUsYourOpinion"></p>
+
+
+                    <br><br><br><br>
+                    <span class="text-muted" data-i18n="someUserAgentExamples"></span>
+
+                    <table class="table table-striped">
+                        <tr>
+                            <td>Chrome</td>
+                            <td class="text-muted">Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36</td>
+                        </tr>
+                        <tr>
+                            <td>iPhone4</td>
+                            <td class="text-muted">Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_3_2 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8H7 Safari/6533.18.5</td>
+                        </tr>
+                        <tr>
+                            <td>Android 4.1 Nexus</td>
+                            <td class="text-muted">Mozilla/5.0 (Linux; Android 4.1.1; Nexus 7 Build/JRO03D) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Safari/535.19</td>
+                        </tr>
+                        <tr>
+                            <td>Windows Firefox 15</td>
+                            <td class="text-muted">Mozilla/5.0 (Windows NT 6.1; WOW64; rv:15.0) Gecko/20120427 Firefox/15.0a1</td>
+                        </tr>
+                    </table>
+
+
                 </div>
             </div>
         </div>

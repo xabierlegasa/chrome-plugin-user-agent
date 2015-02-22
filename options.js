@@ -6,7 +6,7 @@ function save_options() {
     }, function () {
         // Update status to let user know options were saved.
         var status = document.getElementById('status');
-        status.textContent = 'Options saved.';
+        status.textContent = chrome.i18n.getMessage('optionsSaved');
         setTimeout(function () {
             status.textContent = '';
         }, 750);
@@ -16,10 +16,16 @@ function save_options() {
 function setSavedCustomUserAgent() {
 
     chrome.storage.sync.get('customUserAgent', function(result) {
-        customUserAgent = result.customUserAgent;
+        var customUserAgent = result.customUserAgent;
 
         var elem = document.getElementById("customUserAgent");
-        elem.value = customUserAgent;
+        elem.focus();
+
+        if (customUserAgent) {
+            elem.value = customUserAgent;
+        } else {
+            elem.select();
+        }
 
     });
 }
@@ -30,6 +36,4 @@ document.addEventListener('DOMContentLoaded', function () {
         save_options);
 
     setSavedCustomUserAgent();
-
-    console.log('ssss');
 });
