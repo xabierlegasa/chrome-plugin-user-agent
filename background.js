@@ -70,21 +70,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
     chrome.browserAction.onClicked.addListener(function (tab) {
 
-        extensionIconClicked();
-
         if (customUserAgent) {
             if (applyPlugin) {
                 chrome.storage.sync.set({applyPlugin: false}, function () {
                 });
                 chrome.browserAction.setIcon({path: 'images/icon19_off.png'});
+                extensionIconClicked('deactivate_mustache');
             } else {
                 chrome.storage.sync.set({applyPlugin: true}, function () {
                 });
                 chrome.browserAction.setIcon({path: 'images/icon19_on.png'});
+                extensionIconClicked('activate_mustache');
             }
         } else {
             chrome.tabs.create({url: "options.html"});
-            alert(chrome.i18n.getMessage('configureUserAgentFirst'));
+            extensionIconClicked('go_to_options');
         }
     });
 
@@ -115,7 +115,7 @@ _gaq.push(['_trackPageview']);
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 })();
 
-function extensionIconClicked(){
-    console.log('icon clicked');
-    _gaq.push(['_trackEvent', 'plugin icon click (browser action)', 'clicked']);
+function extensionIconClicked(action){
+    // category, action, opt_label, opt_value, opt_noninteraction.
+    _gaq.push(['_trackEvent', 'extension_icon', action]);
 }
