@@ -1,15 +1,15 @@
 {
   "extName": {
-    "message": "User-Agent switcher one click"
+    "message": "User-Agent Switcher Single Click"
   },
   "extDescription": {
-    "message": "Switch User-Agent in one click between normal and custom User-Agent."
+    "message": "Switch User-Agent in a single click between normal and custom User-Agent."
   },
   "extShortName": {
     "message": "User Agent switcher"
   },
   "extDefaultTitle": {
-    "message": "User-Agent switcher one click"
+    "message": "User-Agent Switcher Single Click"
   },
   "optionsSaved": {
     "message": "Options saved"
