@@ -1,16 +1,21 @@
 // Saves options to chrome.storage
 function save_options() {
     var customUserAgent = document.getElementById('customUserAgent').value;
-    chrome.storage.sync.set({
-        customUserAgent: customUserAgent
-    }, function () {
-        // Update status to let user know options were saved.
-        var status = document.getElementById('status');
-        status.textContent = chrome.i18n.getMessage('optionsSaved');
-        setTimeout(function () {
-            status.textContent = '';
-        }, 750);
-    });
+
+    if (customUserAgent == '') {
+        alert('Please, type in a valid user agent');
+    } else {
+        chrome.storage.sync.set({
+            customUserAgent: customUserAgent
+        }, function () {
+            // Update status to let user know options were saved.
+            var status = document.getElementById('status');
+            status.textContent = chrome.i18n.getMessage('optionsSaved');
+            setTimeout(function () {
+                status.textContent = '';
+            }, 750);
+        });
+    }
 }
 
 function setSavedCustomUserAgent() {

@@ -15,7 +15,13 @@
     "message": "Guardado"
   },
   "configuration": {
-    "message": "Configuración"
+    "message": "Configurar"
+  },
+  "howToSwitchUserAgent": {
+    "message": "Cambiar User-Agent"
+  },
+  "howToSwitchUserAgentExplanation": {
+    "message": "Una vez has guardado un User-Agent válido, haz click en el icono de la extensión para activarla/desactivarla"
   },
   "save": {
     "message": "Guardar"
@@ -27,6 +33,15 @@
     "message": "Algunos ejemplos de User-Agent"
   },
   "leaveUsYourOpinion": {
-    "message": "Si te gusta esta extensión gratuita, <a href=\"https://chrome.google.com/webstore/detail/user-agent-switcher-singl/igafjdcboeahmnojhkaplghloibnjkbg/reviews?hl=es-419\">deja tu opinión</a>"
+    "message": "Si te gusta esta extensión, <a href=\"https://chrome.google.com/webstore/detail/user-agent-switcher-singl/igafjdcboeahmnojhkaplghloibnjkbg/reviews?hl=es-419\">deja tu opinión</a>"
+  },
+  "createShortcutForThePlugin": {
+    "message": "Aún mas rápido: cambia de User-Agent con el teclado; abre esto en una nueva pestaña: chrome://extensions/configureCommands"
+  },
+  "aboutText": {
+    "message": "Desarrollado por <a href=\"http:\/\/xabierlegasa.com\">Xabier Legasa</a>. Esta extensión es <a target=\"_blank\" href=\"https://github.com/xabierlegasa/chrome-plugin-user-agent\">opensource</a>"
+  },
+  "about": {
+    "message": "About"
   }
 }

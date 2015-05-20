@@ -17,16 +17,34 @@
   "configuration": {
     "message": "Configuration"
   },
+  "howToSwitchUserAgent": {
+    "message": "How to Switch User-Agent"
+  },
+  "howToSwitchUserAgentExplanation": {
+    "message": "Once you save a custom User-Agent, just click the extension icon to enable/disable it."
+  },
   "save": {
     "message": "Save"
   },
   "configureUserAgent": {
-    "message": "User-Agent when plugin icon is active"
+    "message": "User-Agent, when plugin icon is active"
   },
   "someUserAgentExamples": {
     "message": "Some User-Agent examples"
   },
   "leaveUsYourOpinion": {
-    "message": "If you like this extension, please <a href=\"https://chrome.google.com/webstore/detail/user-agent-switcher-singl/igafjdcboeahmnojhkaplghloibnjkbg/reviews?hl=es-419\">leave us your opinion</a>"
+    "message": "If you like the extension, please <a href=\"https://chrome.google.com/webstore/detail/user-agent-switcher-singl/igafjdcboeahmnojhkaplghloibnjkbg/reviews?hl=es-419\">leave your opinion</a>"
+  },
+  "createShortcutForThePlugin": {
+    "message": "Tip: You can configure a keyboard shortcut to switch User-Agent even faster. Type this in a new tab: chrome://extensions/configureCommands"
+  },
+  "opensource": {
+    "message": "Opensource"
+  },
+  "aboutText": {
+    "message": "Developed by <a href=\"http:\/\/xabierlegasa.com\">Xabier Legasa</a>. This extension is <a target=\"_blank\" href=\"https://github.com/xabierlegasa/chrome-plugin-user-agent\">opensource</a>"
+  },
+  "about": {
+    "message": "About"
   }
 }
